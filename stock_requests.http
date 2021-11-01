@@ -1,0 +1,12 @@
+POST http://localhost:3000/stocks.json
+Content-Type: application/json
+
+{
+  "symbol": "AAPL",
+  "company_name": "Apple Inc",
+  "cost_basis": 150.1,
+  "current_price": 148.3,
+  "quantity": 3,
+  "sector_id": 1,
+  "industry_id": 1
+}
