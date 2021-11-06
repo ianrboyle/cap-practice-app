@@ -19,4 +19,10 @@ class StocksController < ApplicationController
     stock.save
     render json: stock
   end
+
+  def destroy
+    stock = Stock.find_by(id: params[:id])
+    stock.destroy
+    render json: {message: "Stock destroyed."}    
+  end
 end

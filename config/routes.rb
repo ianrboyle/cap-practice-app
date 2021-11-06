@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   ###STOCKS ROUTES###
   get "/stocks" => "stocks#index"
   post "/stocks" => "stocks#create"
+  delete "/stocks/:id" => "stocks#destroy"
 
   ###SECTOR ROUTES ###
   get "sectors" => "sectors#index"
