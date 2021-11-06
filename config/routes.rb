@@ -8,4 +8,7 @@ Rails.application.routes.draw do
 
   ###SECTOR ROUTES ###
   get "sectors" => "sectors#index"
+
+  ###INDUSTRY ROUTES###
+  get "industries" => "industries#index"
 end
