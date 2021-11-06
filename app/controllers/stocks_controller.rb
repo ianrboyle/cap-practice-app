@@ -1,4 +1,9 @@
 class StocksController < ApplicationController
+  def index
+    stocks = Stock.all
+    render json: stocks
+  end
+  
   def create
     # stocks = Stock.all
     # account_value = stocks.reduce(0){|sum, stock| sum + stock.current_total_value}
